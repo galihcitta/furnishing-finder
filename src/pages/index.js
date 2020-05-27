@@ -10,10 +10,7 @@ const IndexPage = () => {
         try {
             const res = await fetch(process.env.REACT_APP_API_ENDPOINT)
             const data = await res.json()
-            const {
-                furniture_styles,
-                products
-              } = data;
+            const { furniture_styles, products } = data;
             setProducts(products)
             setFurnitureStyles(furniture_styles.map((style) => ({
                 label: style,
