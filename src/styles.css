@@ -29,14 +29,6 @@
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.col-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding: 10px;
-}
 .product-card {
     height: 100%;
     border-radius: 10px;
@@ -76,4 +68,12 @@
 .card-footer {
   display: flex;
   justify-content: flex-end;
+}
+.product-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding: 10px;
 }
