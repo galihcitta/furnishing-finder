@@ -23,4 +23,5 @@ Furnishing Finder Mini App built using ReactJS as requirement for applying Front
 - `npm start`
 
 ## DEMO
+https://galihcitta.github.io/furnish-finder/
 https://furnishing-finder-galih.netlify.app/
