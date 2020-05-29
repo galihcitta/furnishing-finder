@@ -8,7 +8,7 @@ const Furniture = ({ products, furnitureStyles, deliveryTimes }) => {
     const [selectedDeliveryTimes, setselectedDeliveryTimes] = useState([])
 
     const onSearchTerm = e => {
-        setSearchTerm(e.target.value);
+        setSearchTerm(e.target.value)
     }
     const onSelectedStyles = e => {
         setSelectedStyles(e)
@@ -18,11 +18,11 @@ const Furniture = ({ products, furnitureStyles, deliveryTimes }) => {
     }
 
     const filteredProducts = products.filter(product => {
-        const filterBySearchTerm = product.name.toLowerCase().includes(searchTerm.toLowerCase());
-        const filterByStyles = selectedStyles.length ? selectedStyles.some(style => product.furniture_style.indexOf(style.value) !== -1) : true;
-        const filterByDeliveryTimes = selectedDeliveryTimes.length ? selectedDeliveryTimes.some(time => parseInt(product.delivery_time) <= parseInt(time.value)) : true;
-        return filterBySearchTerm && filterByStyles && filterByDeliveryTimes;
-    });
+        const filterBySearchTerm = product.name.toLowerCase().includes(searchTerm.toLowerCase())
+        const filterByStyles = selectedStyles.length ? selectedStyles.some(style => product.furniture_style.indexOf(style.value) !== -1) : true
+        const filterByDeliveryTimes = selectedDeliveryTimes.length ? selectedDeliveryTimes.some(time => parseInt(product.delivery_time) <= parseInt(time.value)) : true
+        return filterBySearchTerm && filterByStyles && filterByDeliveryTimes
+    })
 
     return (
         <div>

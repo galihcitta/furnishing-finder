@@ -27,7 +27,6 @@ const IndexPage = () => {
 
     return (
         <div>
-            <div>Fabelio Furniture Page</div>
             <Furniture products={products} furnitureStyles={furnitureStyles} deliveryTimes={deliveryTimes} />
         </div>
     )

@@ -4,7 +4,7 @@ const DropdownFilter = ({ options, value, onDropdownChange, placeholder }) => {
     const [isActiveMenu, setActiveMenu] = useState(false)
 
     const onActiveMenu = () => {
-        setActiveMenu(!isActiveMenu);
+        setActiveMenu(!isActiveMenu)
     }
 
     const renderedMenu = () => {
@@ -23,8 +23,8 @@ const DropdownFilter = ({ options, value, onDropdownChange, placeholder }) => {
                                 type="checkbox"
                                 checked={value.find(val => val === option) ? true : false}
                                 onChange={e => {
-                                const newValue = e.target.checked ? [...value, option] : value.filter(val => val !== option);
-                                onDropdownChange(newValue);
+                                const newValue = e.target.checked ? [...value, option] : value.filter(val => val !== option)
+                                onDropdownChange(newValue)
                                 }}
                                 />
                             </div>
@@ -37,7 +37,7 @@ const DropdownFilter = ({ options, value, onDropdownChange, placeholder }) => {
 
     const renderedButton = () => {
         if (value.length) {
-          placeholder = value.map(val => val.label).join(', ');
+          placeholder = value.map(val => val.label).join(', ')
         }
     
         return (
@@ -47,7 +47,7 @@ const DropdownFilter = ({ options, value, onDropdownChange, placeholder }) => {
           >
             {placeholder}
           </button>
-        );
+        )
       }
 
     return (

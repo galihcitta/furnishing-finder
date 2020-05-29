@@ -13,14 +13,16 @@ const ProductCard = ({ name, description, furniture_style, delivery_time, price 
                 </div>   
             </div>
             <div className="card-body">
-                <p className="card-description">
+                <div className="card-description">
                     {summaryDescription(description)}
-                </p>
+                </div>
                 <div className="card-styles">
                     {furniture_style.map((style, i) => 
                         <span key={i}>
-                            {style + ' '}
+                            {style}
+                            {i !== furniture_style.length - 1 ? ', ' : ' '}
                         </span>
+                        
                     )}
                 </div>
             </div>

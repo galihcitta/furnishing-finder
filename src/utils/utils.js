@@ -1,18 +1,18 @@
 export const deliveryTimes = [
     {
-      label: '1 week',
+      label: '1 Week',
       value: '7'
     },
     {
-      label: '2 weeks',
+      label: '2 Weeks',
       value: '14'
     },
     {
-      label: '1 month',
+      label: '1 Month',
       value: '30'
     },
     {
-      label: 'more',
+      label: 'More',
       value: '-1'
     },
   ];
